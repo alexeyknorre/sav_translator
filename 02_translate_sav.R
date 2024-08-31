@@ -3,7 +3,7 @@
 # This translates original variables and values in SAV files 
 # according to translation spreadsheets
 
-source("code/00_init_packages.R")
+source("00_init_packages.R")
 
 input_files <- list.files("input_files/",
                           pattern = ".sav",

@@ -2,7 +2,7 @@
 # Aug 31, 2024
 # This converts variables and values in SAV to a spreadsheet for manual translation
 
-source("code/00_init_packages.R")
+source("00_init_packages.R")
 
 create_translation_sheet <- function(input_file_path) {
   this_sav <- haven::read_spss(input_file_path)
