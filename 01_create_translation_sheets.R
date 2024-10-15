@@ -9,6 +9,7 @@ create_translation_sheet <- function(input_file_path) {
   
   # Prepare variable labels
   variable_labels <- labelled::var_label(this_sav) |>
+    discard(is.null) |>
     as.data.frame() |>
     t() |>
     as.data.frame() |>
